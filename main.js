@@ -4,7 +4,7 @@ var can_h = parseInt(canvas.getAttribute('height'));
 var ctx = canvas.getContext('2d');
 
 var BALL_NUM = 30
-
+ 
 var ball = {
       x: 0,
       y: 0,
