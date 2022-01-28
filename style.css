@@ -236,4 +236,11 @@ a{
     line-height: 50px;
     display: block;
     text-align: center;
+    border: 1px solid #08fdd8;
+
+}
+.home__btn:hover{
+    color: #000;
+    background-color: #08fdd8;
+    transition: all 0.3s;
 }
