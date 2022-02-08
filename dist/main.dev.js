@@ -268,4 +268,11 @@ canvas.addEventListener('mousemove', function (e) {
   var e = e || window.event;
   mouse_ball.x = e.pageX;
   mouse_ball.y = e.pageY; // console.log(mouse_ball);
-});
+}); /// scroller animation
+// anime({
+//     targets: '.scroller__anim',
+//     translateX: 30,
+//     loop: true,
+//     easing: 'linear',
+//     // direction: 'reverse',
+//   });
