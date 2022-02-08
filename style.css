@@ -303,15 +303,16 @@ a{
 .mas {
     display: flex;
     align-items: center;
+    justify-content: center;
     position: absolute;
     color: var(--black);
     text-align: center;
     width: 101%;
+    height: 100%;
     font-family: "Lato", sans-serif;
     font-weight: 300;
     position: absolute;
     font-size: 11px;
-    padding-top: 17px;
     overflow: hidden;
     background: var(--text-hv);
     font-weight: bold;
