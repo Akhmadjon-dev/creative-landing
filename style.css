@@ -26,6 +26,42 @@ html{
     font-family: 'Roboto Condensed', sans-serif;
 }
 
+// keyframes
+
+
+@-webkit-keyframes ani {
+    from {
+      -webkit-mask-position: 0 0;
+      mask-position: 0 0;
+    }
+    to {
+      -webkit-mask-position: 100% 0;
+      mask-position: 100% 0;
+    }
+  }
+  @keyframes ani {
+    from {
+      -webkit-mask-position: 0 0;
+      mask-position: 0 0;
+    }
+    to {
+      -webkit-mask-position: 100% 0;
+      mask-position: 100% 0;
+    }
+  }
+
+@keyframes arrow {
+    0% {
+      transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(-20px, 0);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+
 a{
     color: var(--text);
     -webkit-transition: color 0.3s;
@@ -225,20 +261,6 @@ a{
     margin: 30px 0;
 }
 .home__btn{
-    /* color: #08fdd8;
-    font-size: 14px;
-    letter-spacing: 4px;
-    font-family: "Open Sans",sans-serif;
-    text-decoration: none;
-    margin-top: 20px;
-    position: relative;
-    width: 100%;
-    max-width: 220px;
-    height: 50px;
-    line-height: 50px;
-    display: block;
-    text-align: center;
-    border: 1px solid #08fdd8; */
     color: var(--text-hv);
     position: relative;
     width: 150px;
@@ -274,9 +296,6 @@ a{
     animation: ani2 0.7s steps(22) forwards;
 }
 .home__btn button:hover{
-    /* color: #000;
-    background-color: #08fdd8;
-    transition: all 0.3s; */
     -webkit-animation: ani 0.7s steps(22) forwards;
     animation: ani 0.7s steps(22) forwards;
 }
@@ -298,26 +317,7 @@ a{
     font-weight: bold;
   }
   
-  @-webkit-keyframes ani {
-    from {
-      -webkit-mask-position: 0 0;
-      mask-position: 0 0;
-    }
-    to {
-      -webkit-mask-position: 100% 0;
-      mask-position: 100% 0;
-    }
-  }
-  @keyframes ani {
-    from {
-      -webkit-mask-position: 0 0;
-      mask-position: 0 0;
-    }
-    to {
-      -webkit-mask-position: 100% 0;
-      mask-position: 100% 0;
-    }
-  }
+  
 
 .scroller__left{
     position: absolute;
@@ -339,18 +339,6 @@ a{
 }
 
 
-
-@keyframes arrow {
-    0% {
-      transform: translate(0, 0);
-    }
-    50% {
-        transform: translate(-20px, 0);
-    }
-    100% {
-      transform: translate(0, 0);
-    }
-  }
   
   
 
