@@ -332,6 +332,7 @@ a{
 
 .scroller__content{
     transform: rotate(90deg);
+
 }
 
 .scroller__item{
@@ -353,7 +354,7 @@ a{
     height: 100%;
     min-height: 100vh;
     background: var(--main-light);
-    padding-left: 20rem;
+    
 }
 
 .portfolio__title{
@@ -366,12 +367,14 @@ a{
     font-size: 7rem;
     line-height: 6.7rem;
     margin-bottom: 40px;
+    padding-left: 20rem;
 }
 
 .portfolio__head{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-left: 20rem;
     margin-bottom: 40px;
 }
 
@@ -388,4 +391,62 @@ a{
     justify-content: center;
     align-items: center;
     margin-left: 3rem;
+}
+
+.portfolio__content{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 130px;
+    margin-bottom: 20rem;
+
+}
+
+.portfolio__item{
+    width: 25%;
+    position: relative;
+    top: 0;
+    left: 0;
+    opacity: 0.4;
+}
+.portfolio__item:hover{
+    opacity: 1;
+    overflow: hidden;
+}
+
+.portfolio__item:hover .portfolio__item-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 25%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    animation: zoomIn; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 0.4s; /* don't forget to set a duration! */
+}
+.portfolio__item:hover .portfolio__img{
+    transform: scale(1.2);
+    transition: transform 0.4s;
+    
+}
+
+.portfolio__item-content{
+    display: none;
+}
+
+.portfolio__img{
+    width: 100%;
+}
+.portfolio__item-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width : 13rem;
+    height: 13rem;
+    border-radius: 50%;
+    background: var(--text-hv);
+    font-size: 2rem;
+    color: var(--black);
+    cursor: pointer;
 }
