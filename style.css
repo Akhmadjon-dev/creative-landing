@@ -359,15 +359,15 @@ a{
 
 .portfolio__title{
     color: #08fdd8;
-    font-weight: 600;
     margin-top: 0;
     position: relative;
     margin-bottom: 40px;
-    left: -10px;
-    font-size: 7rem;
-    line-height: 6.7rem;
+    left: 0px;
     margin-bottom: 40px;
-    padding-left: 20rem;
+    padding-left: 21rem;
+    font-size: 6.5rem;
+    line-height: 6rem;
+    font-weight: 400;
 }
 
 .portfolio__head{
